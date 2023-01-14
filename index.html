@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h1> Python Fetch Example</h1>
-	<p id='embed'>{{embed}}</p>
+<!--	<p id='embed'>{{embed}}</p>-->
 	<p id='mylog'/>
 </body>
 <script>
@@ -15,8 +15,9 @@
      	.then(function (response) {
      		return response.json();
      	}).then(function (text) {
-        	console.log('GET response:');
-        	console.log(text.greeting);
+     		document.getElementById("mylog").innerHTML = text.greeting
+<!--        	console.log('GET response:');-->
+<!--        	console.log(text.greeting);-->
      	});
 </script>
 </html>
