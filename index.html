@@ -1,148 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+</iframe>
+
 
 <head>
-  <meta charset="UTF-8">
-  <script src="main.js" defer=""></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Crypto Buddies - Trading Help </title>
-  <link rel="shortcut icon" href="image/135-1352730_download-pixel-coin-png-png-images-8-bit.png" type="image/x-icon">
-  <!-- Bootstrap , fonts & icons  -->
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./fonts/icon-font/css/style.css">
-  <link rel="stylesheet" href="./fonts/typography-font/typo.css">
-  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- Plugin'stylesheets  -->
-  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
-  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
-  <!-- Vendor stylesheets  -->
-  <link rel="stylesheet" href="./css/main.css">
-  <!-- Custom stylesheet -->
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./image/135-1352730_download-pixel-coin-png-png-images-8-bit.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto Meter - Trader Helper</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-
-<body onload=connection.js data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
-  <div class="site-wrapper overflow-hidden position-relative">
-    <!-- Site Header -->
-    <img src="logo.png" alt="">
-    <div id="blackbar"></div>
-    <!-- Preloader -->
-    <!-- <div id="loading">
-    <div class="preloader">
-     <img src="./image/preloader.gif" alt="preloader">
-   </div>
-   </div>    -->
-            
-          </div>
-          <!-- mobile menu trigger -->
-          <div class="mobile-menu-trigger">
-            <span></span>
-          </div>
-          <!--/.Mobile Menu Hamburger Ends-->
-        </nav>
-      </div>
-    </header>
-    <!-- navbar- -->
-    <!-- Hero Area -->
-    <div class="hero-area-l11 position-relative z-index-1 overflow-hidden">
-      <div class="container position-relative">
-        <div class="row position-relative justify-content-center">
-          <div class="col-xl-8 col-lg-9 col-md-12 order-lg-1 order-1" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
-            <div class="content">
-              <h1>Crypto Buddy: <br class="d-none d-md-block"> made for you.</h1>
-              <div class="row banner-l-11-bottom-content">
-                <div class="col-lg-8 col-md-8 col-sm-10">
-                  <p class="position-relative banner-main-content-l-11">At Crypto Buddy, we have created a mathematical model to correlate sentiment, to value of crypto
-                    <span class="line-left-content"></span>
-                  </p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 flex-y-center ">
-                  <a class="btn l-11-hero-btn" href="#"> Watch video</a>
-                </div>
-                <div class="col-xl-3 col-lg-4">
-                  <div class="compitable-text border-top d-inline-block">
-                 
-                    <div class="compatible-icon flex-y-center img-grayscale">
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+							<a href="#">
+								<img class="header-logo-image" src="src/images/logo-removebg-preview.png" alt="Logo">
+                            </a>
+                        </h1>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-9 order-lg-1 order-0" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+        </header>
+
+        <main>
+            <!-- The html below describes the header section of our website-->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">Welcome to CryptoMeter!</h1>
+	                        <p class="hero-paragraph">At CryptoMeter we have designed models to predict the value of your favorite cryptocurrencies.</p>
+	                        <div class="hero-cta"><a class="button button-primary" href="#">Watch Demo Video</a><a id="predict-crypto" class="button" href="#">Predict Crypto</a></div>
+						</div>
+						<div class="hero-figure anime-element">
+							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+								<rect width="528" height="396" style="fill:transparent;" />
+							</svg>
+							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+							<div class="hero-figure-box hero-figure-box-05"></div>
+							<div class="hero-figure-box hero-figure-box-06"></div>
+							<div class="hero-figure-box hero-figure-box-07"></div>
+							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- This section gives the user some insight into the service and who created it-->
+            <section class="features section">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap">
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-01.svg" alt="Feature 01">
+                                    </div>
+                                    <h4 class="feature-title mt-24">What is this?</h4>
+                                    <p class="text-sm mb-0">CryptoMeter is a software designed to help traders know what to expect. This software will give you insight to the current state of cryptocurrencies, and what the predicted prices are going to be tomorrow, so that you can buy or sell accordingly. Please note that this is NOT FINANCIAL ADVICE.</p>
+                                </div>
+                            </div>
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-02.svg" alt="Feature 02">
+                                    </div>
+                                    <h4 class="feature-title mt-24">How does it work?</h4>
+                                    <p class="text-sm mb-0">At CryptoMeter, we understand the connection between public perception and cryptocurrencies value. We have designed a model to relate the sentiment score of thousands of tweets related to cryptocurrencies, and related this to the price of cryptocurrencies.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-03.svg" alt="Feature 03">
+                                    </div>
+                                    <h4 class="feature-title mt-24">About Us</h4>
+                                    <p class="text-sm mb-0">We are a group of students from the University of Toronto. We have a passion for cryptocurrencies and technology. We have developed this to help others passionate about crypto, just like us.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
-          </div>
-        </div>
-      </div>
-      <div class="hero-shape-l11-1 d-none d-md-block">
-        </div>
-      <div class="hero-shape-l11-2 d-none d-md-block">
-        <img src="./image/l2/hero-shape-2.png" alt="">
-      </div>
-    </div>
-    <!-- Brand-area -->
-    <div class="brand-area-l11">
-     
-        <div class="row img-grayscale">
-          <div class="col-lg-12" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Content Area-1 -->
-    <div class="container">
-    <div class="graph">
-      <div style = "width:100%"></div>
-      <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" width="100%px" height="300px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;">
-      </iframe>
+            <!--Displaying the graphs of the chosen cryptos.-->
+            <section class="pricing section" id="graphs">
+                <div class="container-sm">
+                    <div class="pricing-inner section-inner">
+                        <div class="pricing-header text-center">
+                            <h2 class="section-title mt-0">Current & Predicted Prices</h2>
+                            <p class="section-paragraph mb-0">See the trends in the current Bitcoin and Ethereum prices.</p>
+                        </div>
+                        
+                        <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505" width="100%px" height="300px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
+                        <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=145&pref_coin_id=1505" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 
-    <div class="graph">
-      <div class="nomics-ticker-widget" data-name="Ethereum" data-base="ETH" data-quote="USD"></div>
-      <script src="https://widget.nomics.com/embed.js"></script>
-    </div>
-    
-    </div>
-  <div id="bitCoinParagraph">
-    <p>The price of Bitcoin is expected to: </p>
-  </div>
- 
-<div id="ethParagraph">
-  <p>The price of Ethereum is expected to: </p>
-</div>
-</div>
+    <script src="dist/js/main.min.js"></script>
+    <script>
+        function scroll() {
+            window.scroll({
+                top: 400,
+                left:0,
+                behavior: 'smooth',
+            });
+        }
+        
+        console.log("Test");
 
- 
-    <!-- Content Area -->
-  <h1>About</h1>
-    <!-- Feature Area -->
-    <img src="hadi.png">
-    <img src="Jean Olivier Richard">
-    <img src = ".\image\logo\numberone-1024x480.jpg" alt="">
-    <!-- Testimonial Section -->
-    
-   <!---->
-    <!-- Footer Area -->
-    
-          
-    
-  </div>
-  <!-- Vendor Scripts -->
-  <script src="js/vendor.min.js"></script>
-  <!-- Plugin's Scripts -->
-  <script src="./plugins/aos/aos.min.js"></script>
-  <script src="./plugins/slick/slick.min.js"></script>
-  <script src="./plugins/menu/menu.js"></script>
-  <!-- Activation Script -->
-  <script src="js/custom.js"></script>
-  <!-- Server Script -->
-  <script src="connection.js"></script>
+        a = document.getElementById("predict-crypto")
+        a.addEventListener('click', scroll)
+    </script>
 </body>
 </html>
