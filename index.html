@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="main.js" defer=""></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Crypto Buddies - Trading Help </title>
@@ -29,6 +30,7 @@
 <body onload=connection.js data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
   <div class="site-wrapper overflow-hidden position-relative">
     <!-- Site Header -->
+    <img src="logo.png" alt="">
     <!-- Preloader -->
     <!-- <div id="loading">
     <div class="preloader">
@@ -108,16 +110,22 @@
     
     </div>
     <div class ="buttons">
-      <button class="bitCoinBtn"
-          type="button">
+      <button id="btcn-btn" class="l-11-hero-btn" type="button">
       Predict BitCoin prices
   </button>
-  <button class="ethBtn"
-          type="button">
-      Predict Ethereum prices
-  </button>
+  <div id="bitCoinParagraph">
+    <p>The price of Bitcoin is expected to: </p>
   </div>
-         
+  </div>
+  <div class="ethBtn">
+  <button id="ethrm-btn" class="l-11-hero-btn" type="button">
+Predict Ethereum prices
+</button>
+<div id="ethParagraph">
+  <p>The price of Ethereum is expected to: </p>
+</div>
+</div>
+
  
     <!-- Content Area -->
   
