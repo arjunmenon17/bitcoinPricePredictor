@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-</iframe>
+
 
 
 <head>
@@ -38,7 +38,7 @@
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0">Welcome to CryptoMeter!</h1>
 	                        <p class="hero-paragraph">At CryptoMeter we have designed models to predict the value of your favorite cryptocurrencies.</p>
-	                        <div class="hero-cta"><a class="button button-primary" href="#">Watch Demo Video</a><a id="predict-crypto" class="button" href="#">Predict Crypto</a></div>
+	                        <div class="hero-cta"><a class="button button-primary" href="#">Watch Demo Video</a><button id="predict-crypto" class="button" type=button href="#">Predict Crypto</button></div>
 						</div>
 						<div class="hero-figure anime-element">
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -105,36 +105,36 @@
                             <p class="section-paragraph mb-0">See the trends in the current Bitcoin and Ethereum prices.</p>
                         </div>
                         
-                        <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505" width="100%px" height="300px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
-                        <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=145&pref_coin_id=1505" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
-                        </div>
+                        <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505" width="100%px" height="500px" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
+                        <center><p class="feature text-center is-revealing" id="bitCoinParagraph">The price of Bitcoin is predicted to change to: </p></center>
+                        <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=145&pref_coin_id=1505" width="100%" height="500px"  marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
+                        <center><p class="feature text-center is-revealing" id="ethParagraph">The price of Bitcoin is predicted to change to: </p></center>
                     </div>
                 </div>
             </section>
         </main>
     </div>
-
     <script src="dist/js/main.min.js"></script>
     <script>
         function scroll() {
-            window.scroll({
-                top: 400,
-                left:0,
-                behavior: 'smooth',
+            document.getElementById('graphs').scrollIntoView({
+            behavior: 'smooth'
             });
         }
-        
-        console.log("Test");
 
         a = document.getElementById("predict-crypto")
         a.addEventListener('click', scroll)
-		
-		fetch('/test')
+    </script>
+    <script>
+        fetch('http://127.0.0.1:5000/test')
          .then(function (response) {
+             console.log(response);
              return response.json();
          }).then(function (text) {
-             document.getElementById("bitCoinParagraph").innerHTML = "The price of Bitcoin is expected to be: " + text.btc_price
-             document.getElementById("ethParagraph").innerHTML = "The price of Ethereum is expected to be: " + text.eth_price
+             console.log(text)
+             document.getElementById("bitCoinParagraph").innerHTML = "The price of Bitcoin tomorrow is predicted to change to: ...$" + text.btc_price;
+             document.getElementById("ethParagraph").innerHTML = "The price of Ethereum tomorrow is predicted to change to: ...$" + text.eth_price;
+         });
     </script>
 </body>
 </html>
